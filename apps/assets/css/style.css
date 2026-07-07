@@ -53,6 +53,17 @@ body{
 
 }
 
+.btInicio{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    height: 35px;
+    width: 100%;
+    max-width: 200px;
+    background: linear-gradient(to left,#5D5E60, #8D8D92) ;
+
+}
+
  .DiVideo{
     position: fixed;
     top: 0;
