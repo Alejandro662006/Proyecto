@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body{
+     font-family: Arial,sans-serif;
+     background-color: #fffefcd2;
+     
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 15px 46px;
+        background:rgb(138, 136, 131);
+        border-bottom: 1px solid #ddd;
+
+    }
+    .logo{
+        font: size 50px;
+        font-weight: bold;
+    }
+    nav{
+
+        display:flex;
+        gap:25px;
+        align-items: center;
+
+    }
+
+    nav a{
+        text-decoration:none;
+        color:#222;
+
+    }
+
+    nav button{
+        background-color:#777674;
+        color:rgb(240, 228, 178);
+        border:none;
+        padding: 5px 10px;
+    }
+main{
+    width:90%;
+     max-width: 450px;
+     margin:auto;
+}
+ h1{
+
+    margin-bottom: 30px;
+
+ }
+
+ .buscador button {
+    background-color:#a19f95;
+    color:#f5f2db;
+    border-color:rgb(241, 240, 235);
+ }
+ 
+    h2{
+
+        margin: 30px;
+      
+    }
+ 
+
+ h3{
+    margin: 20px;
+    font-size: 20px;
+ }  
+
+ .punto-verde{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background-color:green;
+    border-radius:50%;
+    margin-right:5px;
+}
+
+@media (min-width: 768px) {
+
+    header{
+        padding: 30px 60px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .torneo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .buscador {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+}
+
+
+
+@media (min-width: 1024px){
+    .torneo {
+         max-width: 850px; 
+        display: flex;
+        padding: 60px;
+        height: 500px;
+        }
+
+        .buscador {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header{
+            padding: 60px;
+             justify-content: space-between;
+            align-items: center;
+        }   
+}
