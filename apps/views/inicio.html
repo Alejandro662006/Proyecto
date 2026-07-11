@@ -13,12 +13,47 @@
             <source src="../assets/videos/fondo inicio.mp4" type="video/mp4"> 
         </video>
     </div>
-    <fieldset class = "field1">
-        <h1>Bienvenido devuelta!</h1>
-        <input class = "inicio" type="text" placeholder= "Gmail o nombre de usuario">
-        <input class = "inicio" type="password" placeholder= "Ingrese su contraseña">
-        <button class = "btInicio" type="submit">Iniciar sesion</button>
-    </fieldset>
+    <div class="Formulario-Container">
+
+        <div class="logo-container">
+
+            <img id="img-logoV" src="../assets/Img/logoV.png" alt="Logo">
+            <h2>Gestión de Torneos</h2>
+            <p> Organizá tus torneos de forma fácil y rápida. </p>
+    
+        </div>
+        <div class="Signup-Container">
+
+            <div class = "encabezado">
+
+                <h1>Bienvenido</h1>
+                <p>Inicia sesión para continuar</p>
+
+            </div>
+            
+            <form class = "Formulario" method="post">
+                
+                <div class ="grupo_inputLBL">
+
+                    <label class="lbl_inicio" for="email">Email</label>    
+                    <input class="inpt_inicio" id="email" type="email" placeholder="ej@gmail.com" required >            
+                    
+                </div>
+                <div class = "grupo_inputLBL">
+                    
+                    <label class="lbl_inicio" for="contraseña"> Contraseña </label>
+                    <input class="inpt_inicio" id="contraseña"  type="password" placeholder="********" required>
+
+                </div>             
+                <button class="btInicio" type="submit"> Iniciar sesión </button>      
+
+            </form>
+
+
+        </div>
+
+
+    </div>
 </body>
 
 </html> 

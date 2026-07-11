@@ -12,28 +12,36 @@
             <source src="../assets/videos/fondo inicio.mp4" type="video/mp4"> 
         </video>
     </div>
-
     <div class="Formulario-Container">
 
-            <div class = "Signup-Container">    
-                
-                <h1>Registrarse</h1>
-                <input class="inpt_inicio " type="button" placeholder="prueba" >
-                <label id = "lbl_inicio" for = "inicio">Gmail o nombre de usuario</label>
-                <input class = "inpt_inicio" type="text" placeholder="ej@gmail.com">
-                <label id = "lbl_inicio" for = "inicio">Contraseña</label>
-                <input class = "inpt_inicio" type="password" placeholder="********">
-                <label id = "lbl_inicio" for = "inicio">Confirmar contraseña</label>
-                <input class = "inpt_inicio" type="password">
-                <button class = "btRegistro" type="submit">Registrarse</button>
+        <div class="Signup-Container">
 
-            </div>
+            <h1>Bienvenido</h1>
+            <p>Inicia sesión para continuar</p>
+            <form class = "Formulario" method="post">
+                <label id="lbl_inicio" for="email">Email</label>                  
+                <input class="inpt_inicio" id="email" type="email" placeholder="ej@gmail.com" required >
+                <label id="lbl_inicio" for="contraseña"> Contraseña </label>                   
+                <input class="inpt_inicio" id="contraseña"  type="password" placeholder="********" required>
+                <button class="btInicio" type="submit"> Iniciar sesión </button>                                   
+                <button class="btRegistro" href = "registro.html" type="button"> Registrarse </button>                   
+            </form>
 
-            <div class = "logo-container">
+        </div>
 
-                <p>Ya tenes una cuenta? Inicia sesion y accede a todas las caracteristicas de nuestra pagina</p>
+        <div class="logo-container">
 
-            </div>
+
+            <img id="img-logoV" src="../assets/Img/logoV.png" alt="Logo">
+            <h2>Gestión de Torneos</h2>
+            <p> Organizá tus torneos de forma fácil y rápida. </p>
+    
+        </div>
+
+
+
+
+
     </div>
 </body>
 </html>
