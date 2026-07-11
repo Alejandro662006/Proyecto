@@ -13,12 +13,11 @@ body{
 .Encabezado{
     display: flex;
     position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
+    padding: 5px 10px;
     z-index: 1000;
-    background: linear-gradient(0deg, #455194, #1F264E);
-
+    background: linear-gradient(0deg, #170664, #170664CC);
+    backdrop-filter: blur(10px);
+    margin-bottom: 50px;
 }
 
 .btn-Inicio{
