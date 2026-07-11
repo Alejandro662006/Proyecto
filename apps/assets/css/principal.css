@@ -26,11 +26,12 @@ header{
 
 }
  
-logo{
+.logo{
 
     display: none;
-    width: 100%;
-    padding: 30px 20px;
+    height: 30px;
+    width: 30px;
+    padding: 10px 20px;
     background: linear-gradient(0deg, white, grey);
     flex-direction: column;
     justify-content: center;
