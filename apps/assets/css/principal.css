@@ -1,43 +1,36 @@
-*{ margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    }
-
-
-
-body{
+/* Reset básico */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+}
+
+/* Configuración general */
+body{
+    font-family: 'Poppins', Arial, sans-serif;
     background-color: #f5f5f5;
+    min-height: 100vh;
 }
 
-
+/* Header */
 header{
-    
- display: flex;
-        justify-content: space-between;
-        align-items:center;
-        padding: 15px 46px;
-        background:rgb(138, 136, 131);
-        border-bottom: 1px solid #ddd;
-
-}
- 
-.logo{
-
-    display: none;
-    height: 30px;
-    width: 30px;
-    padding: 10px 20px;
-    background: linear-gradient(0deg, white, grey);
-    flex-direction: column;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    
+    padding: 15px 40px;
+    background-color: rgb(138, 136, 131);
+    border-bottom: 1px solid #ddd;
 }
 
+/* Imágenes generales */
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
-
+/* Logo */
+.logo{
+    width: 70px; /* cambiá este valor para hacerlo más chico o más grande */
+    height: auto;
+}
