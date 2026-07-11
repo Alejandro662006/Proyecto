@@ -122,6 +122,9 @@ ul{
     border-radius: 30px;
     color: #333;
    
- 
-    
+
+}
+
+.btn-inicio:hover{
+     transform: scale(1.05);
 }
