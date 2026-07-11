@@ -7,7 +7,7 @@
 
 body{
      font-family: Arial,sans-serif;
-     background-color: #fffefcd2;
+     background-color: #596691d2;
      
     }
 
@@ -16,12 +16,27 @@ body{
         justify-content: space-between;
         align-items:center;
         padding: 15px 46px;
-        background:rgb(138, 136, 131);
-        border-bottom: 1px solid #ddd;
+        background:rgb(69, 81, 148);
+     
     }
-    .logo{
-        font: size 50px;
+
+    .btn-Inicio{
+        background-color:#f3c260;
+        color:rgb(8, 8, 8);
+        border:none;
+        padding: 5px 10px;
+        border-radius: 30px;
+    }
+    .logo-container{
+        font: size 20px;
         font-weight: bold;
+    }
+
+    .img-logoV{
+        width: 50px;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 10px;
     }
     nav{
 
@@ -34,12 +49,13 @@ body{
     nav a{
         text-decoration:none;
         color:#222;
+        align-items: center;
 
     }
 
     nav button{
         background-color:#777674;
-        color:rgb(240, 228, 178);
+        background-color: #596691d2;
         border:none;
         padding: 5px 10px;
     }
@@ -55,9 +71,8 @@ main{
  }
 
  .buscador button {
-    background-color:#a19f95;
-    color:#f5f2db;
-    border-color:rgb(241, 240, 235);
+    background:transparent
+   
  }
  
     h2{
