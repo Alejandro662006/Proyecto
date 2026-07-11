@@ -16,14 +16,33 @@ body{
 header{
 
     
- display: flex;
+        display: flex;
         justify-content: space-between;
         align-items:center;
-        padding: 15px 46px;
-        background:rgb(69, 81, 148);
-        border-bottom: 1px solid #373c88;
+        padding: 5px 10px;
+        background: linear-gradient(0deg, rgb(23, 6, 100), rgba(23, 6, 100, 0.8));
+        backdrop-filter: blur(10px);
+        margin-bottom: 50px;
+       
 
 }
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 100px;
+    font-size: 12px;
+    
+    
+    
+}
+
+nav a:hover{
+    color: #e8c25f;
+    transition: 0.3s;
+}
+
+
 .fondo{
     position: fixed;
     inset: 0;
@@ -37,10 +56,76 @@ header{
 .logo{
     display: flex;
     align-items: center;
-}
+  }
 
 .img-logoV{
     width: 60px;
     height: auto;
+    margin-right: 80px;
 }
 
+h1{
+    font-size: 40px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+ul{
+    font-size: 15px;
+    color: white;
+     margin-bottom: 20px;
+    text-align: center;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+
+.btn-principal{
+        padding: 15px 30px;
+        background-color: #e8c25f;
+        color: #333;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn-principal:hover{
+    transform: scale(1.05);
+}
+
+
+.btn-secundario{
+        padding: 15px 20px;
+        background: transparent;
+        color: #f5f5f5;
+        border: 1px solid rgba(255,255,255,0.5);
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .btn-secundario:hover{
+    transform: scale(1.05);
+}
+
+.btn-inicio{
+    padding: 5px 10px;
+    background-color: #e8c25f;
+    border-radius: 30px;
+    color: #333;
+   
+
+}
+
+.btn-inicio:hover{
+     transform: scale(1.05);
+}
