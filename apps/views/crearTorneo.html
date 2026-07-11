@@ -7,74 +7,30 @@
     <title>Crea tu torneo</title>
     <link rel="stylesheet" href="../assets/css/crear-Torneo.css">
 </head>
+
+
+
 <body>
-    <div class="torneo">
-
+    <header>  
         <div class="Logo">
-        <img src="../assets/Img/Vartyx.png" alt="Logo">
+        <img src="../assets/Img/logoV.png" alt="Logo">
         </div>
 
-        <h1>Crea tu torneo</h1>
 
-        <div class="participantes">
+        <nav>
+            <a href="soporte.html">Soporte</a>
 
-            <div class="deporte">
-                <label for="deporte">Deporte</label>
+        </nav>
+       
+    </header>
 
-                <input
-                    id="deporte"
-                    type="text"
-                    maxlength="24"
-                    placeholder="Ej Fútbol">
-            </div>
-            <div class="jugadores">
-                <label for="jugadores">Jugadores</label>
+    <main>
 
-                <input
-                    id="jugadores"
-                    type="number"
-                    min="1"
-                    max="999"
-                    placeholder="7">
-            </div>
 
-        </div>
+        
+    </main>
 
-        <div class="opcion">
 
-            <input type="radio" name="formato" id="fase_unica">
-            <label for="fase_unica">Fase única</label>
+    </body>
 
-            <select id="select_fase_unica">
-                <option>Cuadro eliminatorio</option>
-                <option>Cuadro doble eliminación</option>
-                <option>Liga todos contra todos</option>
-                <option>Sistema suizo</option>
-            </select>
-
-        </div>
-
-        <div class="opcion">
-
-            <input type="radio" name="formato" id="multifase">
-            <label for="multifase">Multifase</label>
-
-            <select id="select_multi" >
-                <option>Grupos todos contra todos</option>
-                <option>Fase suiza</option>
-            </select>
-
-            <br><br>
-
-            <select id="select_multi_2" >
-                <option>Cuadro eliminatorio</option>
-                <option>Cuadro doble eliminación</option>
-            </select>
-
-        </div>
-        <button>
-            Crear torneo
-        </button>
-    </div>
-</body>
-</html>
+    </html>
