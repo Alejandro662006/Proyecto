@@ -2,81 +2,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 body{
-     font-family: Arial,sans-serif;
-     background-color: #8594c5d2;
-     
-    }
+    background-color: #8594c5d2;
 
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items:center;
-        padding: 5px 5px;
-        background:rgb(69, 81, 148);
-     
-    }
+}
 
-    .btn-Inicio{
-        background-color:#f3c260;
-        color:rgb(248, 248, 248);
-        border:none;
-        padding: 5px 10px;
-        border-radius: 30px;
-    }
+.Encabezado{
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(0deg, #455194, #1F264E);
 
-    .btn-Inicio:hover{
-         transform: scale(1.05);
-    }
-    .logo-container{
-        font: size 20px;
-        font-weight: bold;
-    }
+}
 
-    .img-logoV{
-        width: 50px;
-        height: auto;
-        object-fit: cover;
-        margin-bottom: auto;
-    }
-    nav{
+.btn-Inicio{
+    display: none;
+    background-color:#f3c260;
+    color:rgb(248, 248, 248);
+    border:none;
+    padding: 5px 10px;
+    border-radius: 10px;
 
-        display:flex;
-        gap:25px;
-        align-items: center;
+}
 
-    }
+.btn-Inicio:hover{
+    transform: scale(1.05);
 
-    nav a{
-        text-decoration:none;
-        color:#fcf9f9;
-        align-items: center;
-        margin-right: 50px;
-        font-size: 12px;
-    }
+}
 
-    nav a:hover{
+.logo-container{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.img-logoV{
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: auto;
+
+}
+
+.nav_encabezado {
+    display: flex;
+    gap:25px;        
+    align-items: center;
+
+}
+
+.a_encabezado{
+    display: none;
+    text-decoration:none;
+    color:#fcf9f9;
+    align-items: center;
+    margin-right: 50px;
+    font-size: 15px;
+
+}
+
+nav a:hover{
     color: #e8c25f;
     transition: 0.3s;
-}
-
-    nav button{
-        background-color:#777674;
-        background-color: #596691d2;
-        border:none;
-        padding: 5px 10px;
-    }
-main{
-    width:90%;
-     max-width: 450px;
-     margin:auto;
 
 }
-
-
 .fondo{
     position: fixed;
     inset: 0;
@@ -84,93 +79,32 @@ main{
     height: 100%;
     object-fit: cover;
     z-index: -1;
+
 }   
- h1{
-
-    margin-bottom: 30px;
-    text-align: center;
-    color:white;
-
- }
-
- .buscador button {
-    background:transparent
-   
- }
-
-.buscador{
-
-    color:white;
-}
-
-    h2{
-
-        margin: 30px;
-        text-align: center;
-        color:white;
-      
-    }
- 
-
- h3{
-    margin: 20px;
-    font-size: 15px;
-    text-align: center;
-    color:white;
- }  
-
- 
-
- .punto-verde{
-    display:inline-block;
-    width:10px;
-    height:10px;
-    background-color:green;
-    border-radius:50%;
-    margin-right:5px;
-}
-
-
 @media (min-width: 768px) {
 
+    .a_encabezado{
+        display: flex;
+
+    }
+    .btn-Inicio{
+        display: flex;
+
+    }
     header{
         padding: 5px 10px;
         justify-content: space-between;
         align-items: center;
         margin-bottom:50px;
+
     }
-    .torneo {
-        display: flex;
+}
+@media (min-width: 1024px){
+    header{
+        padding: 5px 10px;
         justify-content: space-between;
         align-items: center;
-        }
 
-        .buscador {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-}
+    }
 
-
-
-@media (min-width: 1024px){
-    .torneo {
-         max-width: 850px; 
-        display: flex;
-        padding: 60px;
-        height: 500px;
-        }
-
-        .buscador {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header{
-            padding: 5px 10px;
-             justify-content: space-between;
-            align-items: center;
-        }   
 }
