@@ -7,35 +7,64 @@
         <title>Document</title>
     </head>
     <body>
-    <div class = "DiVideo">
-        <video autoplay muted loop>
-            <source src="../assets/videos/fondo inicio.mp4" type="video/mp4"> 
-        </video>
-    </div>
+        
+        <img class = "fondo" src="../assets/Img/fondoV.jpeg" alt="">
+
     <div class="Formulario-Container">
 
-        <div class="Signup-Container">
-
-            <h1>Bienvenido</h1>
-            <p>Inicia sesión para continuar</p>
-            <form class = "Formulario" method="post">
-                <label id="lbl_inicio" for="email">Email</label>                  
-                <input class="inpt_inicio" id="email" type="email" placeholder="ej@gmail.com" required >
-                <label id="lbl_inicio" for="contraseña"> Contraseña </label>                   
-                <input class="inpt_inicio" id="contraseña"  type="password" placeholder="********" required>
-                <button class="btInicio" type="submit"> Iniciar sesión </button>                                   
-                <button class="btRegistro" href = "registro.html" type="button"> Registrarse </button>                   
-            </form>
-
-        </div>
-
         <div class="logo-container">
-
 
             <img id="img-logoV" src="../assets/Img/logoV.png" alt="Logo">
             <h2>Gestión de Torneos</h2>
             <p> Organizá tus torneos de forma fácil y rápida. </p>
     
+        </div>
+        <div class="Signup-Container">
+
+            <div class = "encabezado">
+
+                <h1>Bienvenido</h1>
+                <p>Inicia sesión para continuar</p>
+
+            </div>
+
+            <form class = "Formulario" method="post">
+                
+                <div class ="grupo_inputLBL">
+
+                    <label class="lbl_inicio" for="email">Email</label>    
+                    <input class="inpt_inicio" id="email" type="email" placeholder="ej@gmail.com" required >            
+                    
+                </div>
+                <div class = "grupo_inputLBL">
+                    
+                    <label class="lbl_inicio" for="contraseña"> Contraseña </label>
+                    <input class="inpt_inicio" id="contraseña"  type="password" placeholder="********" required>
+
+                </div>             
+                <div class = "grupo_inputLBL">
+                    
+                    <label class="lbl_inicio" for="Confirmarcontraseña"> Repetir Contraseña </label>
+                    <input class="inpt_inicio" id="Confirmarcontraseña"  type="password" placeholder="********" required>
+
+                </div>             
+                <button class="btInicio" type="submit"> Iniciar sesión </button>      
+
+            </form>
+            
+            <p> --------------------------- O inicia sesion con ------------------------------ </p> 
+            <button class = "btInicio "type="button">
+                
+                <span class = "Icono-Google">
+                <img alt width = "18" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" >
+                
+            </span>
+
+            <span> Google </span>
+
+            </button>
+            
+            <p class = "Registro-Inicio"> ¿Ya tenes una cuenta? <a href="inicio.html"> Inicia Sesion </a> </p>
         </div>
 
 
