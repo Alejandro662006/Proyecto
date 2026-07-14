@@ -26,7 +26,6 @@ body{
  /* #region Contenedores */
 .Formulario-Container-Registro{
     min-width: 400px;
-    min-height: 70vh;
     padding: 0;
     display: flex;
     flex-direction: column; 
@@ -38,7 +37,6 @@ body{
 }
 .Formulario-Container-Inicio{
     min-width: 400px;
-    min-height: 60vh;
     padding: 0;
     display: flex;
     flex-direction: column; 
@@ -99,7 +97,6 @@ body{
     padding: 35px 5px 35px 5px;
 }
 .encabezado-foto{
-    height: 9vh;
     width: 9vh;
 }
 a{
@@ -187,7 +184,6 @@ a{
         align-items: stretch; 
         width: 90%;
         max-width: 800px;
-        height: 75vh;
     }
     .Formulario-Container-Inicio{
         flex-direction: row;
