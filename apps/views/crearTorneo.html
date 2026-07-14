@@ -11,10 +11,11 @@
 
 
 <body>
+
+    <img class= "Fondo"
+    src="../assets/Img/FondoDos.jpeg" alt="">
     <header>  
-        <div class="Logo">
-        <img src="../assets/Img/logoV.png" alt="Logo">
-        </div>
+        
 
 
         <nav>
@@ -24,11 +25,68 @@
        
     </header>
 
-    <main>
+    <div class="CrearTorneos">
+
+            <div class="Crear">
+                <h1>Crea aqui el torneo que desees</h1>
+                <p>Completa los campos obligatoriops</p>
+            </div>
+
+            <form class="Creacion Torneo" method="post">
+
+                <div class="nombreTorneo">
+                
+                <label class="Iblnombre" for="nombre">Nombre del torneo</label>
+                <input class="Inpnombre" name="nombre" id="nombre" type="string"placeholder="copa mundiañ" required />
+                    </div>
+
+                    <div class="lugarTorneo">
+
+                        <label class="lbllugar" for="lugar">En que lugar se jugara? </label>
+                        <input class="Inplugar" name="lugar" id="lugar" type="string" placeholder="Montevideo" required>
 
 
-        
-    </main>
+                    </div>
+<main>
+
+                    <div class="particiantes">
+
+                        <label class="lblparticipantes" for="participantes">Cuantos participantes?</label>
+                        <input class="Inpparticipantes" name="partcipantes" id="participates" placeholder="5"  required>
+
+                    </div>
+
+                    <div class="fecha">
+
+                        <label class="lblfecha" for="fecha">Fecha</label>
+                        <input class="inpfecha" name="fecha" id="fecha" type="date">
+                    </div>
+
+                    <div class="deporte">
+
+                        <label class="lbldeporte" for="deporte">Que deporte se jugara?</label>
+                        <select class="inpdeporte" name="deporte" id="deporte" required>
+                            <option value="">Selecciona un deporte</option>
+                            <option value="futbol">Futbol</option>
+                            <option value="basketball">Basketball</option>
+                            <option value="tenis">Tenis</option>
+                            <option value="voleibol">Voleibol</option>
+                        
+                        </select>
+                    </div>
+
+                    <button type="submit">Crear Torneo</button>
+
+
+
+
+
+            </form>
+
+
+    </div>
+
+</main>
 
 
     </body>
