@@ -131,3 +131,146 @@ nav a:hover{
 .btn-inicio:hover{
      transform: scale(1.05);
 }
+
+
+.seccion-deportes{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.seccion-deportes h2{
+    font-size: 32px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.seccion-deportes p{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.cards-deportes{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.card-deporte{
+    background-color: rgba(23, 6, 100, 0.75);
+    border-radius: 15px;
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+}
+
+.card-deporte:hover{
+    transform: scale(1.05);
+}
+
+
+.deporte-virtual,
+.deporte-mesa,
+.deporte-fisico{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+
+.card-deporte h3{
+    font-size: 22px;
+    color: #e8c25f;
+    margin-bottom: 8px;
+}
+
+.card-deporte p{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 0;
+}
+
+
+.seccion-publico{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.seccion-creadores{
+    margin-bottom: 40px;
+}
+
+
+.fila-publico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 40px;
+}
+
+.fila-creadores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 40px;
+}
+
+
+.img-seccion{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.texto-seccion h2{
+    font-size: 32px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.texto-seccion p{
+    font-size: 18px;
+    color: white;
+}
+
+
+.seccion-cta{
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: rgba(23, 6, 100, 0.55);
+}
+
+.seccion-cta p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.seccion-cta .btn-principal{
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+footer{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 5px 10px;
+        background: linear-gradient(0deg, #170664, #170664CC);
+        backdrop-filter: blur(10px);
+}

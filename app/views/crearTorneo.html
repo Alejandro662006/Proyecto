@@ -1,94 +1,196 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crea tu torneo</title>
-    <link rel="stylesheet" href="../assets/css/crear-Torneo.css">
+    <link rel="stylesheet" href="..\..\public\css\crear-Torneo.css">
+    <title>Document</title>
 </head>
-
-
 
 <body>
 
-    <img class= "Fondo"
-    src="../assets/Img/FondoDos.jpeg" alt="">
-    <header>  
-        
+    <img class = "fondo" src="..\..\public\Img\FondoDos.jpeg" alt="">
 
+    <div class="Formulario-Container-Crear">
 
-        <nav>
-            <a href="soporte.html">Soporte</a>
+        <div class="logo-container">
+            <div class = "imagen-logo">
+                <img id="img-logoV" src="..\..\public\Img\logoV.png" alt="Logo">
+            </div>
+            <div class = "Texto-Logo">
+                <h2>Crea tu torneo y configura las reglas como quieras</h2>
+            </div>
+        </div>
 
-        </nav>
-       
-    </header>
+        <div class="Signup-Container">
 
-    <div class="CrearTorneos">
-
-            <div class="Crear">
-                <h1>Crea aqui el torneo que desees</h1>
+            <div class = "encabezado-Inicio">
+                <img class = "encabezado-foto" src="..\..\public\Img\logoV.png" alt="logo">
+                <h1>Crear torneo</h1>
                 <p>Completa los campos obligatoriops</p>
             </div>
 
-            <form class="Creacion Torneo" method="post">
+            <form class="Formulario" method="post">
 
-                <div class="nombreTorneo">
-                
-                <label class="Iblnombre" for="nombre">Nombre del torneo</label>
-                <input class="Inpnombre" name="nombre" id="nombre" type="string"placeholder="copa mundiañ" required />
+                <div class="seccion-form">
+                    <h2>Datos generales</h2>
+
+                    <div class ="grupo_inputLBL">
+                        <label class="lbl_inicio" for="nombre">Nombre del torneo</label>
+                        <input class="inpt_inicio" name="nombre" id="nombre" type="text" placeholder="copa mundiañ" required>
                     </div>
 
-                    <div class="lugarTorneo">
-
-                        <label class="lbllugar" for="lugar">En que lugar se jugara? </label>
-                        <input class="Inplugar" name="lugar" id="lugar" type="string" placeholder="Montevideo" required>
-
-
-                    </div>
-<main>
-
-                    <div class="particiantes">
-
-                        <label class="lblparticipantes" for="participantes">Cuantos participantes?</label>
-                        <input class="Inpparticipantes" name="partcipantes" id="participates" placeholder="5"  required>
-
+                    <div class ="grupo_inputLBL">
+                        <label class="lbl_inicio" for="descripcion">Descripcion</label>
+                        <textarea class="inpt_inicio" name="descripcion" id="descripcion" rows="3" placeholder="Escribe una descripcion"></textarea>
                     </div>
 
-                    <div class="fecha">
-
-                        <label class="lblfecha" for="fecha">Fecha</label>
-                        <input class="inpfecha" name="fecha" id="fecha" type="date">
-                    </div>
-
-                    <div class="deporte">
-
-                        <label class="lbldeporte" for="deporte">Que deporte se jugara?</label>
-                        <select class="inpdeporte" name="deporte" id="deporte" required>
+                    <div class ="grupo_inputLBL">
+                        <label class="lbl_inicio" for="disciplina">Disciplina / deporte</label>
+                        <select class="inpt_inicio" name="disciplina" id="disciplina" required>
                             <option value="">Selecciona un deporte</option>
                             <option value="futbol">Futbol</option>
-                            <option value="basketball">Basketball</option>
-                            <option value="tenis">Tenis</option>
-                            <option value="voleibol">Voleibol</option>
-                        
+                            <option value="ajedrez">Ajedrez</option>
+                            <option value="tenis_mesa">Tenis de mesa</option>
+                            <option value="videojuegos">Videojuegos</option>
+                            <option value="otro">Otro</option>
                         </select>
                     </div>
 
-                    <button type="submit">Crear Torneo</button>
+                    <div class ="grupo_inputLBL" id="disciplinaOtro" style="display: none;">
+                        <label class="lbl_inicio" for="disciplina_otro">Cual disciplina?</label>
+                        <input class="inpt_inicio" name="disciplina_otro" id="disciplina_otro" type="text" placeholder="Ej: Voleibol">
+                    </div>
 
+                    <div class ="grupo_inputLBL">
+                        <label class="lbl_inicio">Modalidad</label>
+                        <div class="opcionesRadio">
+                            <label for="mod_individual">
+                                <input type="radio" name="modalidad" id="mod_individual" value="individual" checked>
+                                Individual
+                            </label>
+                            <label for="mod_equipos">
+                                <input type="radio" name="modalidad" id="mod_equipos" value="equipos">
+                                Por equipos
+                            </label>
+                        </div>
+                    </div>
 
+                    <div class="fechas">
+                        <div class ="grupo_inputLBL">
+                            <label class="lbl_inicio" for="fecha_inicio">Fecha de inicio</label>
+                            <input class="inpt_inicio" name="fecha_inicio" id="fecha_inicio" type="date">
+                        </div>
+                        <div class ="grupo_inputLBL">
+                            <label class="lbl_inicio" for="fecha_fin">Fecha de fin</label>
+                            <input class="inpt_inicio" name="fecha_fin" id="fecha_fin" type="date">
+                        </div>
+                    </div>
 
+                    <div class ="grupo_inputLBL">
+                        <label class="lbl_inicio">Visibilidad</label>
+                        <div class="opcionesRadio">
+                            <label for="vis_publico">
+                                <input type="radio" name="visibilidad" id="vis_publico" value="publico" checked>
+                                Publico
+                            </label>
+                            <label for="vis_borrador">
+                                <input type="radio" name="visibilidad" id="vis_borrador" value="borrador">
+                                Borrador
+                            </label>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="seccion-form">
+                    <h2>Tipo de torneo</h2>
+
+                    <div class ="grupo_inputLBL">
+                        <label class="lbl_inicio" for="tipo_torneo">Tipo</label>
+                        <select class="inpt_inicio" name="tipo_torneo" id="tipo_torneo" required>
+                            <option value="">Selecciona el tipo</option>
+                            <option value="liga">Liga</option>
+                            <option value="eliminacion">Eliminacion directa</option>
+                            <option value="suizo">Sistema suizo</option>
+                        </select>
+                    </div>
+
+                    <div id="opcionesLiga" style="display: none;">
+
+                        <p class="tipoDesc">Liga: todos juegan contra todos y se suman puntos.</p>
+
+                        <div class ="grupo_inputLBL">
+                            <label class="lbl_inicio">Ida y vuelta</label>
+                            <div class="opcionesRadio">
+                                <label for="ida_si">
+                                    <input type="radio" name="ida_vuelta" id="ida_si" value="si">
+                                    Si
+                                </label>
+                                <label for="ida_no">
+                                    <input type="radio" name="ida_vuelta" id="ida_no" value="no" checked>
+                                    No
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class ="grupo_inputLBL">
+                            <label class="lbl_inicio" for="puntos_victoria">Puntos por victoria</label>
+                            <input class="inpt_inicio" name="puntos_victoria" id="puntos_victoria" type="number" min="0" value="3">
+                        </div>
+                        <div class ="grupo_inputLBL">
+                            <label class="lbl_inicio" for="puntos_empate">Puntos por empate</label>
+                            <input class="inpt_inicio" name="puntos_empate" id="puntos_empate" type="number" min="0" value="1">
+                        </div>
+                        <div class ="grupo_inputLBL">
+                            <label class="lbl_inicio" for="puntos_derrota">Puntos por derrota</label>
+                            <input class="inpt_inicio" name="puntos_derrota" id="puntos_derrota" type="number" min="0" value="0">
+                        </div>
+
+                    </div>
+
+                    <div id="opcionesEliminacion" style="display: none;">
+                        <p class="tipoDesc">Eliminacion directa: perdes y quedas afuera.</p>
+                        <div class ="grupo_inputLBL">
+                            <label class="lbl_inicio" for="participantes">Cantidad de participantes</label>
+                            <input class="inpt_inicio" name="participantes" id="participantes" type="number" min="2" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div id="opcionesSuizo" style="display: none;">
+                        <p class="tipoDesc">Sistema suizo: rondas segun el puntaje actual.</p>
+                        <div class ="grupo_inputLBL">
+                            <label class="lbl_inicio" for="rondas">Cantidad de rondas</label>
+                            <input class="inpt_inicio" name="rondas" id="rondas" type="number" min="1" placeholder="5">
+                        </div>
+                        <div class ="grupo_inputLBL">
+                            <label class="lbl_inicio" for="desempate">Criterio de desempate</label>
+                            <select class="inpt_inicio" name="desempate" id="desempate">
+                                <option value="">Selecciona un criterio</option>
+                                <option value="buchholz">Buchholz</option>
+                                <option value="sonneborn">Sonneborn-Berger</option>
+                                <option value="diferencia">Diferencia de puntos</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btInicio" type="submit"> Crear Torneo </button>
 
             </form>
 
+            <br>
+            <p class = "Registro"> <a href="principal.html"> Volver a principal </a>
+            <br>
+            <br>
+            </p>
+
+        </div>
 
     </div>
 
-</main>
+    <script src="..\..\public\js\crear-torneo.js"></script>
 
+</body>
 
-    </body>
-
-    </html>
+</html>
