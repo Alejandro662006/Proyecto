@@ -31,7 +31,6 @@ header{
     padding: 5px 10px;
     background: linear-gradient(0deg, #170664, #170664CC);
     backdrop-filter: blur(10px);
-    margin-bottom: 50px;
 
 }
 nav a{
@@ -77,27 +76,28 @@ main{
     background-color: #050118;
 }
 .search-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    margin: 30px 0;
-    background-color: whitesmoke;
+    background-color: #050118;
+    padding: 10px 0;
+    border-bottom: 2px solid #0e052b;
 
 }
 .search-input{
+    display: block;
+    margin: auto auto;
     height: 50px;
     width: 90%;
     max-width: 600px;
     border-radius: 30px;
-    padding: 0 15px;
+    padding: 10px 15px;
     border: 1px solid #ccc;
     outline: none;
-    
-    
+    background-color: #0e052b;
+    color: whitesmoke;
+
 }
 h1{
-    display: flex;
+    padding: 30px 20px;
     justify-content: left;
     
 }
