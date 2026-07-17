@@ -209,6 +209,7 @@ textarea.inpt_inicio{
         flex-direction: column;
         justify-content: center;
         gap: 30px;
+        max-width: 800px;
         
     }
     .encabezado-foto{
@@ -252,7 +253,7 @@ textarea.inpt_inicio{
     
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1024px){
     .Formulario-Container-Crear {
         max-width: 900px;
     }
