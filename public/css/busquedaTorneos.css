@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.fondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}  
+
+button{
+    padding: 50px;
+
+ }
+/*#region Encabezado*/  
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 5px 10px;
+    background: linear-gradient(0deg, #170664, #170664CC);
+    backdrop-filter: blur(10px);
+    margin-bottom: 50px;
+
+}
+nav a{
+    display: none;
+    color: white;
+    text-decoration: none;
+    margin-right: 100px;
+    font-size: 15px;
+    
+}
+nav a:hover{
+    color: #e8c25f;
+    transition: 0.3s;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.img-logoV{
+    width: 60px;
+    height: auto;
+    margin-right: 80px;
+
+}
+.btn-inicio{
+    display: none;
+    padding: 5px 10px;
+    background-color: #e8c25f;
+    border-radius: 30px;
+    color: #333;
+   
+
+}
+.btn-inicio:hover{
+    transform: scale(1.05);
+
+}
+/* #endregion  */
+
+main{
+    background-color: #050118;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+    background-color: whitesmoke;
+
+}
+.search-input{
+    height: 50px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 30px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    
+    
+}
+h1{
+    display: flex;
+    justify-content: left;
+    
+}
+.deportes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.cards-deportes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(0, 13, 255, 0.956);
+    border-radius: 24px;
+    padding: 14px;
+    height: 120px;
+    width: 100%;
+    max-width: 300px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s, background-color 0.2;
+}
+.cards-deportes:hover{
+    transform: translateX(5px);
+    background-color: #231ee6;
+
+}
+.section-deportes{
+    padding: 40px 20px;
+    color: white;
+}
+@media (min-width: 768px){
+    .deportes{
+        grid-template-columns: repeat(3, 300px);
+        
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 60px
+    }
+
+    nav a{
+        display: block;
+        margin-right: 0px;
+
+    }
+    .btn-inicio{
+        display: block;
+
+    }
+  
+
+}
+
+@media (min-width: 1024px){
+    .deportes{
+        grid-template-columns: repeat(3, 300px);
+    }
+
+
+
+}
