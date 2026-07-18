@@ -5,91 +5,137 @@
         <title>Buscar torneos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../public/css/busquedaTorneos.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
 
     <body>
-        <img class = "fondo" src="../../public/Img/fondoV.jpeg" alt="">
-        <header>
+        <header class = "section-header">
 
-            <div class="logo"> 
-                
-                    <div class="logo-container">
-                        <img class="img-logoV" id="img-logoV" src="..\..\public\Img\logoV.png" alt="Logo">
-                    </div> 
-
+            <div class = "header-container">
+                <span class = "badge"> Explora </span>
+                <h1> Encuentra torneos y ligas en todas partes del mundo</h1>
+                <p> Mantente al dia con calendarios, resultados y clasificaciones en tiempo real</p>
             </div>
-            
-            <nav>
-                
-                <a href="principal.html">Principal</a>
-                <a href="proyecto.html">Buscar torneos</a>
-                <a href="contacto.html">Contacto</a>
-                <button class="btn-inicio">Iniciar sesion</button>
-                
 
-            </nav>
         </header>
+
         <div class = "search-container ">
-            
-            <input class = "search-input" type="search" placeholder= "Busca torneos o ligas">
-            
+            <div class = "container-search-type">
+                <div class = "search">
+
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="search" placeholder= "Busca torneos o ligas por su nombre">
+
+                </div>
+                <div class="type">
+
+                    <select>
+                        <option value="">Todos los deportes</option>
+                        <option value="">Futbol</option>
+                        <option value="">Padel</option>
+                        <option value="">Baloncesto</option>
+                        <option value="">Voleibol</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down select-icon"></i>
+
+                </div>
+            </div>
         </div>
         <main>
             <section class = "section-deportes">
                 <h1>Deportes</h1>
                 <div class = "deportes">
 
-                    <a class= "cards-deportes">
-                        <h2>Basquetbol</h2>
+                    <a href = "#" class= "cards-deportes">
+                        <i class="fa-solid fa-basketball"></i><h2>Basquetbol</h2>
                     </a>
 
-                     <a class= "cards-deportes">
-                        <h2>Futbol</h2>
+                    <a href = "#" class= "cards-deportes">
+                        <i class="fa-solid fa-soccer-ball"></i><h2>Futbol</h2>
                     </a>
 
-                     <a class= "cards-deportes">
-                        <h2>Ajedrez</h2>
+                    <a href = "#" class= "cards-deportes">
+                        <i class="fa-solid fa-chess"></i><h2>Ajedrez</h2>
                     </a>
 
-                     <a class= "cards-deportes">
-                        <h2>Beisbol</h2>
+                    <a href = "#" class= "cards-deportes">
+                        <i class="fa-solid fa-baseball"></i><h2>Beisbol</h2>
                     </a>
 
-                     <a class= "cards-deportes">
-                        <h2>Hockey</h2>
+                    <a href = "#" class= "cards-deportes">
+                       <i class="fa-solid fa-hockey-puck"></i><h2>Hockey</h2>
                     </a>
 
-                     <a class= "cards-deportes">
-                        <h2>Rugby</h2>
+                    <a href = "#" class= "cards-deportes">
+                        <i class="fa-solid fa-football"></i><h2>Rugby</h2>
                     </a>
                 </div>
             </section>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br><br>
-            <br>
-            <br>
-            <br>
-            <br> 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br><br>
-            <br>
-            <br>
-            <br>
-            <div class = "torneo">
-                <h2>Crea tu propio torneo</h2>
-                <p></p>
-                <button ></button>
+
+        <h2 class = "torneo-grid-title">Torneos destacados</h2>
+        <div class = "torneo-grid">
+            <article class = "card-torneo">
+                <div class = "card-image-futbol">
+                    <span class = "badge"><i class="fa-solid fa-soccer-ball"></i>Futbol</span>
+                </div>
+                <div class = "card-body">
+                    <h3>Mundial 2026</h3>
+                    <div class="card-info">
+                        <p><i class="fa-solid fa-calendar-days"></i> 24 Jul - 26 Jul, 2026</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Madrid, España</p>
+                    </div>
+                    <div class = "card-footer">
+                        <span class = "estado-badge-open">Inscripciones abiertas</span>
+                        <a href="" class = "btn-card">Ver torneo  <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>  
+        
+            <article class = "card-torneo">
+                <div class = "card-image-padel">
+                    <span class = "badge"><i class="fa-solid fa-soccer-ball"></i>Padel</span>
+                </div>
+                <div class = "card-body">
+                    <h3>Mundial 2026</h3>
+                    <div class="card-info">
+                        <p><i class="fa-solid fa-calendar-days"></i> 24 Jul - 26 Jul, 2026</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Madrid, España</p>
+                    </div>
+                    <div class = "card-footer">
+                        <span class = "estado-badge-open">Inscripciones abiertas</span>
+                        <a href="" class = "btn-card">Ver torneo  <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>  
+        
+            <article class = "card-torneo">
+                <div class = "card-image-ajedrez">
+                    <span class = "badge"><i class="fa-solid fa-soccer-ball"></i>Ajedrez</span>
+                </div>
+                <div class = "card-body">
+                    <h3>Mundial 2026</h3>
+                    <div class="card-info">
+                        <p><i class="fa-solid fa-calendar-days"></i> 24 Jul - 26 Jul, 2026</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Madrid, España</p>
+                    </div>
+                    <div class = "card-footer">
+                        <span class = "estado-badge-open">Inscripciones abiertas</span>
+                        <a href="" class = "btn-card">Ver torneo  <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>  
+        </div>
+        </main> 
+        <footer>
+            <div class = "info-grid">
+                <div class = "links">
+                    <nav>
+                        <a href="">Inicio</a>
+                        <a href="">BusquedaTorneos</a>
+                        <a href="">CreacionTorneos</a>
+                    </nav>
+                </div>
             </div>
-        </main>
+        </footer>
     </body>
 </html>
