@@ -4,6 +4,21 @@
     box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+:root {
+    /* Paleta de Colores Universales */
+    --color-principal: #170664;         /* Azul oscuro de marca */
+    --color-principal-alfa: #170664CC;   /* Azul oscuro con 80% de opacidad */
+    --color-principal-tarjeta: rgba(23, 6, 100, 0.75); /* Azul para fondos de tarjetas */
+    --color-principal-cta: rgba(23, 6, 100, 0.55);     /* Azul sutil para el llamado a la acción */
+    --color-bordes: #3106f1cc;
+    --color-acento: #e8c25f;            /* Dorado/Amarillo para botones y hovers */
+    
+    --color-fondo-claro: #f5f5f5;       /* Gris muy claro para el fondo del body */
+    --color-texto-oscuro: #333333;      /* Gris oscuro para texto sobre botones claros */
+    --color-borde-blanco: rgba(255, 255, 255, 0.5); /* Blanco semitransparente */
+    --color-borde-diferencial: #100641;
+}
+
 
 body{
     display: flex;
@@ -13,18 +28,17 @@ body{
     margin: 0;
     padding: 20px 0;
     color: white;
-
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;  
 }
 
-.fondo{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-}   
 
+@keyframes gradient{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
  /* #region Contenedores */
 .Formulario-Container-Crear{
     min-width: 400px;
@@ -37,7 +51,9 @@ body{
     color: white;
     border: 2px solid white;
     border-radius: 15px;
-    overflow: hidden; 
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .Signup-Container{
@@ -99,28 +115,30 @@ a{
 }
  .inpt_inicio{
     width: 100%;
-    border-radius: 5px;
     padding: 17px 20px;
     font-size: 16px;
-    box-sizing: border-box; 
     color: white;
-    border-color: white;
+    border: 2px solid rgba(255, 255, 255, 0.15);;
+    border-radius: 5px;
     background-color: transparent;
     padding: 10px;
-    color: white;
- }
+    transition: all 0.5s ease;
+    outline: none;
+}
+
+.inpt_inicio:focus{
+    border-color: var(--color-bordes);
+
+}
 
 textarea.inpt_inicio{
     font-family: inherit;
     resize: vertical;
 }
 
-.inpt_inicio:focus{
-    outline: 2px solid white;
-}
-
 .inpt_inicio option{
-    color: black;
+    background-color: var(--color-principal-alfa) ;
+    color: white;
 }
 
 #img-logoV{
@@ -145,8 +163,14 @@ textarea.inpt_inicio{
     box-sizing: border-box;
     max-width: 100%;
     background-color: transparent;
+    outline: none;
+    transition: all 0.5s ease;
     
 }
+.btInicio:hover{
+    border-color: #3106f1cc;
+}
+
 /* #endregion */
 
 .seccion-form{
