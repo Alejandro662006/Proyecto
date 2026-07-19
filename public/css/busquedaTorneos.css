@@ -313,15 +313,101 @@ main{
 
 
 /* #endregion */
-footer{
-    height: 40vh;
-    background-color:#0c0433;
-    border-top: var(--color-borde-diferencial);
+/* #region pie de pagina */
+
+a nav{
+    text-decoration: none;
+    
 }
 .info-grid{
     display: grid;
 
 }
+.site-footer {
+    background-color: #0b0221; /* Morado muy oscuro que combina con tu fondo */
+    color: #ffffff;
+    padding: 60px 0 20px 0;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Línea sutil de separación */
+}
+
+/* Contenedor que agrupa las 4 columnas */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye las columnas equitativamente */
+    gap: 35px;
+}
+
+/* Estilos individuales de cada columna */
+.footer-column {
+    flex: 1;
+    min-width: 200px; /* Evita que se rompa en pantallas medianas */
+}
+
+/* Títulos de las columnas */
+.footer-column h3 {
+    color: #a5a2b5; /* Gris claro/lavanda para los títulos */
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* Listas de enlaces */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+/* Enlaces */
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+/* Efecto Hover para los links */
+.footer-column ul li a:hover {
+    opacity: 1;
+    color: --color-acento; /* Podés cambiar este color por el verde de tus tarjetas ("Inscripciones abiertas") */
+}
+
+/* Estilos específicos para iconos de redes sociales (si usás FontAwesome) */
+.social-links i {
+    margin-right: 8px;
+    width: 16px;
+    text-align: center;
+}
+
+/* Barra inferior de Copyright */
+.footer-bottom {
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #a5a2b5;
+    font-size: 0.85rem;
+}
+/* #endregion */
 
 
 @media (min-width: 768px){
