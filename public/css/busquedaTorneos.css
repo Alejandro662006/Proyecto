@@ -50,6 +50,12 @@ main{
     color: white;
 
 }
+.header-volver{
+}
+.btn_volver{
+
+
+}
 
 .header-container h1{
     font-size: 2.8rem;
@@ -175,6 +181,7 @@ main{
     padding: 0 24px;
     color: white;
 }
+
 .deportes{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -209,26 +216,18 @@ main{
 }
 /* #endregion */
 /* #region Cards torneos activos */
+
 .torneo-grid{
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     width: 100%;
     max-width: 1200px;
     gap: 24px;
     margin: 0 auto;
-    padding: 20px 30px 20px 30px ;
+    padding: 20px 0 20px 0  ;
 }
-.torneo-grid-title{
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 700;
-    width: 100%;
-    max-width: 1200px;
-    margin: 40px auto 20px auto ;
-    padding: 0 24px;
-    color: white;
-    
-}
+
 .card-torneo{
     background-color: rgba(23, 6, 100, 0.75);
     border: 1px solid var(--color-bordes);
@@ -294,7 +293,7 @@ main{
 }
 .card-info p i {
     width: 16px;
-    color: #3106f1cc;
+    color: white;
 }
 .card-footer{
     display: flex;
@@ -307,11 +306,36 @@ main{
     font-size: 0.8rem;
     font-weight: 600;
 }
-.estado-badge-open{
+.estado-badge{
     color: #00ffaa;
 }
 
 
+/* #endregion */
+/* #region Seccion para crear torneo */
+.section-crear{
+    margin: none;
+    border: 1px solid #3106f1cc;
+    border-radius: 15px;
+    background-color: rgba(23, 6, 100, 0.75);
+}
+.section-text h2{
+    margin: 20px;
+}
+.section-text p{
+    font-size: 14px;
+    margin: 10px 20px 20px 20px;
+}
+.btn-crear{
+    height: 50px;
+    width: 140px;
+    border: 1px solid transparent;
+    margin: 0 0 10px 15px;
+    border-radius: 30px;
+    font-size: 1rem;
+    background-color: var(--color-acento);
+    color: black;
+}
 /* #endregion */
 /* #region pie de pagina */
 
@@ -412,23 +436,38 @@ a nav{
 
 @media (min-width: 768px){
     .torneo-grid{
-        display: flex;
+        column-gap: 0px;
+    }
+    .torneo-grid-titulo{
+        padding: 0 10px;
+
     }
     .torneo-grid-title{
         text-align: left;
     }
-    .deportes{
-        padding: 0px 40px;
+    .section-crear{
+        padding: 10px;
+        margin: 40px 24px 40px 24px;
     }
-  
-
+    
 }
 
 @media (min-width: 1024px){
     .deportes{
         grid-template-columns: repeat(3, 300px);
     }
-
-
-
+    .torneo-grid{
+        column-gap: 25px;
+        margin: auto;
+        grid-template-columns: repeat(3, 300px);
+    }
+    .section-crear{
+       margin-left: 100px;
+       margin-right: 100px;
+        
+    }
+    .section-deportes h1{
+    padding: 0 100px;
+    }
+    
 }
