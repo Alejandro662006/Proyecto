@@ -346,7 +346,7 @@ a nav{
 /* Efecto Hover para los links */
 .footer-column ul li a:hover {
     opacity: 1;
-    color: --color-acento; /* Podés cambiar este color por el verde de tus tarjetas ("Inscripciones abiertas") */
+    color: var(--color-acento); /* Podés cambiar este color por el verde de tus tarjetas ("Inscripciones abiertas") */
 }
 
 /* Estilos específicos para iconos de redes sociales (si usás FontAwesome) */
