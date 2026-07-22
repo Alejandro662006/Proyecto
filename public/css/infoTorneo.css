@@ -19,16 +19,38 @@
     --color-borde-blanco: rgba(255, 255, 255, 0.5); /* Blanco semitransparente */
     --color-borde-diferencial: #100641;
 }
+body{
+    background-color: var(--color-fondo);
+}
 main{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: var(--color-fondo);
+
+}
+.header1{
+    background-color: var(--color-acento);
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+
+}
+.header1-a{
+    padding: 0 20px 0 0;
+
+}
+.header1-btn{
+    margin: 0 0 0 0;
+
 }
 .header2{
     display: flex;
     border: 1px solid var(--color-bordes);
     margin: 0px 5px 0px 5px; 
     background-color: var(--color-principal);
+
 }
 .header2_volver a{
     text-decoration: none;
@@ -38,18 +60,62 @@ main{
 .header2_info{
     color: white;
     font-size: 20px;    
+
 }
 .header2_calendario{
     background-color: var(--color-principal-alfa);
     color: white;
     border: 2px solid var(--color-bordes);
     justify-content: space-between;
+
 }
-.header2_calendario-inicio{
-    border: 1px solid ;
+.header2_calendario-inicio{   
+    border: 1px solid;
     padding-top: 10px;
+
 }
 .header2_calendario-final{
     border: 1px solid;
     padding-top: 10px;
+
+}
+.info-torneo{
+    border: 1px solid var(--color-bordes);
+    background-color: var(--color-principal-alfa);
+    margin: 10px 5px;
+    padding-bottom: 20px;
+
+}
+.info-torneo-a{
+    padding: 0 15px 0 15px;
+    text-decoration: none;
+    
+}
+.info-total-general{
+    border: 1px solid var(--color-bordes);
+    background-color: var(--color-principal-alfa);
+    margin: 10px 5px;
+    display: flex;
+
+}
+.info-total-general1{
+    border: 1px solid var(--color-bordes);
+    padding: 10px;
+    margin: 10px 5px;
+
+}
+.info-total-general1 {
+    
+}
+.info-total-general2{
+    border: 1px solid var(--color-bordes);
+    padding: 10px;
+    margin: 10px 5px;
+
+}
+@media (min-width: 768px){
+
+}
+@media (min-width: 1024px){
+
 }
