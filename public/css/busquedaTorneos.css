@@ -6,29 +6,26 @@
 }
 :root {
     /* Paleta de Colores Universales */
-    --color-principal: #170664;         /* Azul oscuro de marca */
-    --color-principal-alfa: #170664CC;   /* Azul oscuro con 80% de opacidad */
-    --color-principal-tarjeta: rgba(23, 6, 100, 0.75); /* Azul para fondos de tarjetas */
-    --color-principal-cta: rgba(23, 6, 100, 0.55);     /* Azul sutil para el llamado a la acción */
+    --color-principal: #170664;         /*  */
+    --color-principal2: #170664CC;   /*  */
+    --color-principal-tarjeta: rgba(23, 6, 100, 0.75); /*  */
+    --color-fondo: #0c0433;     /*  */
     --color-bordes: #3106f1cc;
-    --color-acento: #e8c25f;            /* Dorado/Amarillo para botones y hovers */
-    
-    --color-fondo-claro: #f5f5f5;       /* Gris muy claro para el fondo del body */
-    --color-texto-oscuro: #333333;      /* Gris oscuro para texto sobre botones claros */
-    --color-borde-blanco: rgba(255, 255, 255, 0.5); /* Blanco semitransparente */
-    --color-borde-diferencial: #100641;
+    --fondo-botones: #e8c25f;            /*  */
+    --texto: #f5f5f5;       /* */
+    --texto-oscuro: #333333;      /* */
+
 }
 
 
 body{
-    background-color: #0c0433;
+    background-color: var(--color-fondo);
     margin: 0;
 
 }
-main{
-    background-color: #0c0433;  
+main{  
     min-height: 100vh;
-    color: var(--text-white);
+    color: var(--texto);
     width: 100%;
     margin-top: 80px;
     
@@ -50,7 +47,28 @@ main{
     color: white;
 
 }
-
+.header-volver{
+    padding: 0px 92% 0 0;
+}
+.a_volver{
+    display: flex;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 0;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s, border-color 0.2
+}
+.a_volver i{
+    padding: 2px 10px 0px 5px;
+}
+.a_volver:hover{
+    translate: translateY(10px);
+    color: var(--fondo-botones)
+}
 .header-container h1{
     font-size: 2.8rem;
     font-weight: 800;
@@ -65,7 +83,7 @@ main{
 }
 .badge{
     background-color: rgba(232, 194, 95, 0.1);
-    color: var(--color-acento);
+    color: var(--texto);
     padding: 6px 14px;
     border-radius: 20px;
     font-weight: 600;
@@ -129,7 +147,7 @@ main{
 
 }
 .search input:focus {
-    border-color: var(--color-acento);
+    border-color: var(--fondo-botones);
     box-shadow: 0 0 0 3px rgba(232, 194, 95, 0.2);
 }
 
@@ -155,9 +173,11 @@ main{
     
 }
 .type select:focus{
-    border-color: var(--color-acento);
-    
+    border-color: var(--fondo-botones);
+    box-shadow: 0 0 0 3px rgba(232, 194, 95, 0.2);
 }
+    
+
 .type i{
     position: absolute;
     right: 18px;
@@ -175,6 +195,7 @@ main{
     padding: 0 24px;
     color: white;
 }
+
 .deportes{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -204,31 +225,23 @@ main{
 .cards-deportes:hover{
     transform: translateX(-5px);
     background-color: var(--color-principal);
-    border-color: var(--color-acento);
+    border-color: var(--fondo-botones);
 
 }
 /* #endregion */
 /* #region Cards torneos activos */
+
 .torneo-grid{
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     width: 100%;
     max-width: 1200px;
     gap: 24px;
     margin: 0 auto;
-    padding: 20px 30px 20px 30px ;
+    padding: 20px 0 20px 0  ;
 }
-.torneo-grid-title{
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 700;
-    width: 100%;
-    max-width: 1200px;
-    margin: 40px auto 20px auto ;
-    padding: 0 24px;
-    color: white;
-    
-}
+
 .card-torneo{
     background-color: rgba(23, 6, 100, 0.75);
     border: 1px solid var(--color-bordes);
@@ -294,7 +307,7 @@ main{
 }
 .card-info p i {
     width: 16px;
-    color: #3106f1cc;
+    color: white;
 }
 .card-footer{
     display: flex;
@@ -307,11 +320,48 @@ main{
     font-size: 0.8rem;
     font-weight: 600;
 }
-.estado-badge-open{
+.estado-badge{
     color: #00ffaa;
+}
+.btn-card{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.637);
 }
 
 
+/* #endregion */
+/* #region Seccion para crear torneo */
+.section-crear{
+    margin: none;
+    border: 1px solid #3106f1cc;
+    border-radius: 15px;
+    background-color: rgba(23, 6, 100, 0.75);
+}
+.section-text h2{
+    margin: 20px;
+}
+.section-text p{
+    font-size: 14px;
+    margin: 10px 20px 20px 20px;
+}
+.btn-crear{
+    height: 50px;
+    width: 140px;
+    border: 2px solid transparent;
+    margin: 0 0 10px 15px;
+    border-radius: 30px;
+    font-size: 1rem;
+    background-color: var(--fondo-botones);
+    color: var(--texto-oscuro);
+    transition: transform 10s ease, color 0.25s ease;
+    transition: transform 10s ease, border-color 0.25s ease;
+    cursor: pointer;
+}
+.btn-crear:hover{
+    border-color: var(--color-bordes);
+    color: var(--color-fondo-claro);
+    box-shadow: 0 12px 30px rgba(5, 1, 24, 0.5);
+}
 /* #endregion */
 /* #region pie de pagina */
 
@@ -324,40 +374,40 @@ a nav{
 
 }
 .site-footer {
-    background-color: #0b0221; /* Morado muy oscuro que combina con tu fondo */
+    background-color: #0b0221; 
     color: #ffffff;
     padding: 60px 0 20px 0;
     width: 100%;
-    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Línea sutil de separación */
+    border-top: 1px solid rgba(255, 255, 255, 0.05); 
 }
 
-/* Contenedor que agrupa las 4 columnas */
+
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribuye las columnas equitativamente */
+    justify-content: space-between; 
     gap: 35px;
 }
 
-/* Estilos individuales de cada columna */
+
 .footer-column {
     flex: 1;
-    min-width: 200px; /* Evita que se rompa en pantallas medianas */
+    min-width: 200px; 
 }
 
-/* Títulos de las columnas */
+
 .footer-column h3 {
-    color: #a5a2b5; /* Gris claro/lavanda para los títulos */
+    color: #a5a2b5; 
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
 
-/* Listas de enlaces */
+
 .footer-column ul {
     list-style: none;
     padding: 0;
@@ -377,20 +427,19 @@ a nav{
     transition: opacity 0.2s ease, color 0.2s ease;
 }
 
-/* Efecto Hover para los links */
+
 .footer-column ul li a:hover {
     opacity: 1;
-    color: --color-acento; /* Podés cambiar este color por el verde de tus tarjetas ("Inscripciones abiertas") */
+    color: var(--fondo-botones); 
 }
 
-/* Estilos específicos para iconos de redes sociales (si usás FontAwesome) */
+
 .social-links i {
     margin-right: 8px;
     width: 16px;
     text-align: center;
 }
 
-/* Barra inferior de Copyright */
 .footer-bottom {
     margin-top: 50px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -412,23 +461,38 @@ a nav{
 
 @media (min-width: 768px){
     .torneo-grid{
-        display: flex;
+        column-gap: 0px;
+    }
+    .torneo-grid-titulo{
+        padding: 0 10px;
+
     }
     .torneo-grid-title{
         text-align: left;
     }
-    .deportes{
-        padding: 0px 40px;
+    .section-crear{
+        padding: 10px;
+        margin: 40px 24px 40px 24px;
     }
-  
-
+    
 }
 
 @media (min-width: 1024px){
     .deportes{
         grid-template-columns: repeat(3, 300px);
     }
-
-
-
+    .torneo-grid{
+        column-gap: 25px;
+        margin: auto;
+        grid-template-columns: repeat(3, 300px);
+    }
+    .section-crear{
+       margin-left: 100px;
+       margin-right: 100px;
+        
+    }
+    .section-deportes h1{
+    padding: 0 100px;
+    }
+    
 }

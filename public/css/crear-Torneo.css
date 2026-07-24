@@ -32,6 +32,7 @@ body{
     margin: 0;
     padding: 20px 0;
     color: white;
+
     background-image: url(../Img/FondoDos.jpeg);
     background-repeat: no-repeat;
     background-position: center;
@@ -54,6 +55,7 @@ pero en realidad cambian de pocision */
 
  /* #region Contenedores */
 .Formulario-Container-Crear{
+
     min-width: 400px;
     width: 90%;
     max-width: 500px;
