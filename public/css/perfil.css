@@ -78,7 +78,8 @@ nav a:hover{
     font-size: 40px;
     color: white;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    padding-left: 100px;
     margin-bottom: 8px;
 }
 
