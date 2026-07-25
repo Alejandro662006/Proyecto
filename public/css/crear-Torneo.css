@@ -5,9 +5,11 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-    /*root donde se crean las variables en css*/
+ /*root donde se crean las variables en css*/
 
 
+
+ 
 :root {
 
     --color-principal: #170664;         /* Azul oscuro de marca */
