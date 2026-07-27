@@ -265,3 +265,51 @@ nav a:hover{
 
 
 }
+
+#menu-check,
+.menu-icono {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    header {
+        position: relative;
+    }
+
+    /* Muestra las tres rayitas */
+    .menu-icono {
+        display: block;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    /* Oculta el menú */
+    header nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: #170664;
+        flex-direction: column;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    /* Muestra el menú al tocar las rayitas */
+    #menu-check:checked ~ nav {
+        display: flex;
+    }
+
+    header nav a {
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    .img-logoV {
+        margin-right: 0;
+    }
+}
