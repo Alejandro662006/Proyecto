@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+     <title>Vartyx</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../public/css/perfil.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+    <body>
+        <img class = "fondo" src="../public/Img/fondoV.jpeg" alt="">
+
+        <header>
+
+            <div class="logo">
+                <div class="logo-container">
+                    <img class="img-logoV" id="img-logoV" src="..\public\Img\logoV.png" alt="Logo">
+                </div>
+            </div>
+
+            <input type="checkbox" id="menu-check">
+
+            <label for="menu-check" class="menu-icono">
+             <i class="fa-solid fa-bars"></i>
+            </label>
+            
+            <nav>
+
+                <a href="index.html">Principal</a>
+                <a href="busquedaTorneos.html">Explorar torneos</a>
+                <a href="soporte.html">Soporte</a>
+                <a href="inicio.html"><button class="btn-inicio">Iniciar sesion</button></a>
+
+            </nav>
+
+        </header>
+
+        <main>
+
+            <div class="contenido-titulo">
+                <h1>Mi perfil</h1>
+
+            </div>
+
+            <div class="perfil">
+
+                <div class="perfil-usuario">
+                    <img class="foto-perfil" src="..\public\Img\imagen perfil.jpg" alt="foto-perfil.jpg">
+                    <h2>Martin Osimani</h2>
+                    <p class="usuario">@martinosimani</p>
+
+                    <div class="datos-perfil">
+                        <p><i class="fa-solid fa-location-dot"></i> Montevideo, Uruguay</p>
+                        <p><i class="fa-solid fa-envelope"></i> martin@gmail.com</p>
+                        <p><i class="fa-solid fa-calendar-days"></i> Se unio en Marzo 2026</p>
+                    </div>
+
+                    <div class="stats-perfil">
+                        <div class="stat">
+                            <span class="numero">2</span>
+                            <span class="texto">Creados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="numero">2</span>
+                            <span class="texto">Inscrito</span>
+                        </div>
+                    </div>
+
+                    <a href="#"><button class="btn-principal">Editar perfil</button></a>
+                </div>
+
+                <div class="perfil-torneos">
+
+                    <section class="seccion-torneos">
+                        <h2>Torneos que hice</h2>
+                        <div class="cards-torneos">
+
+                            <div class="card-torneo">
+                                <img class="img-torneo" src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80" alt="torneo.jpg">
+                                <h3>Copa Chimuchunga</h3>
+                                <p>Futbol - Montevideo, Uruguay</p>
+                            </div>
+
+                            <div class="card-torneo">
+                                <img class="img-torneo" src="..\public\Img\imagenAjedrez.jpg" alt="torneo.jpg">
+                                <h3>Torneo de Ajedrez</h3>
+                                <p>Ajedrez - Canelones, Uruguay</p>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="seccion-torneos">
+                        <h2>Torneos inscrito</h2>
+                        <div class="cards-torneos">
+
+                            <div class="card-torneo">
+                                <img class="img-torneo" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&q=80" alt="torneo.jpg">
+                                <h3>Liga de Padel</h3>
+                                <p>Padel - Maldonado, Uruguay</p>
+                            </div>
+
+                            <div class="card-torneo">
+                                <img class="img-torneo" src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=600&q=80" alt="torneo.jpg">
+                                <h3>Copa de Barrio</h3>
+                                <p>Futbol - Montevideo, Uruguay</p>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="site-footer">
+                <div class="footer-container">
+                    <div class="footer-column">
+                        <h3>Menús</h3>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="busquedaTorneos.html">Torneos</a></li>
+                            <li><a href="crearTorneo.html">Creación Torneos</a></li>
+                            <li><a href="perfil.html">Perfil</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Soporte</h3>
+                        <ul>
+                            <li><a href="soporte.html">Centro de ayuda</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Términos de servicio</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Política de cookies</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Redes Sociales</h3>
+                        <ul class="social-links">
+                            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i> X </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <small>&copy; 2026 Plataforma de Torneos Mundiales.</small>
+                    </div>
+                </div>
+        </footer>
+
+    </body>
+</html>
