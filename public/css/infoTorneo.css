@@ -6,17 +6,17 @@
 }
 :root {
     /* Paleta de Colores Universales */
-    --color-principal: #170664;         /* Azul oscuro de marca */
-    --color-principal-alfa: #170664CC;   /* Azul oscuro con 80% de opacidad */
-    --color-principal-tarjeta: rgba(23, 6, 100, 0.75); /* Azul para fondos de tarjetas */
-    --color-principal-cta: rgba(23, 6, 100, 0.55);     /* Azul sutil para el llamado a la acción */
+    --color-principal: #170664;         
+    --color-principal-alfa: #170664CC;   
+    --color-principal-tarjeta: rgba(23, 6, 100, 0.75); 
+    --color-principal-cta: rgba(23, 6, 100, 0.55);     
     --color-bordes: #3106f1cc;
     --color-acento: #e8c25f;   
-    --color-fondo: rgb(23, 3, 80);         /* Dorado/Amarillo para botones y hovers */
+    --color-fondo: rgb(23, 3, 80);         
     
-    --color-fondo-claro: #f5f5f5;       /* Gris muy claro para el fondo del body */
-    --color-texto-oscuro: #333333;      /* Gris oscuro para texto sobre botones claros */
-    --color-borde-blanco: rgba(255, 255, 255, 0.5); /* Blanco semitransparente */
+    --color-fondo-claro: #f5f5f5;       
+    --color-texto-oscuro: #333333;      
+    --color-borde-blanco: rgba(255, 255, 255, 0.5); 
     --color-borde-diferencial: #100641;
 }
 body{
